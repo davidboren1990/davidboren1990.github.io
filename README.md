@@ -144,5 +144,3 @@
 				<a target="_blank" href="https://www.linkedin.com/in/dboren/"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"></a>
 				<a href="https://www.instagram.com/davidboren90/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/960px-Instagram_logo_2022.svg.png"></a>
 		</footer>
-	</body>
-</html>
