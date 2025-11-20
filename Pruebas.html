@@ -3,27 +3,130 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Hotel Star Wars</title>	
-		<link rel="stylesheet" href="pruebas.css">
+		<style>
+@font-face
+	{
+	font-family:'Star Jedi'
+	src: url("StarJedi-DGRW.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	}
+h1
+	{
+	text-align: center;
+	font-family: 'Star Jedi';
+	font-size: 36px;
+	font
+	}
+h2 
+	{
+	text-align: center;
+	font-family:'Star Jedi';
+	font-size: 32px;
+	}
+form
+	{
+	text-align: center;
+	font-family:'Star Jedi';
+	}
+option 
+	{
+	text-align: center;
+	font-family:Garamond;
+	font-size: 16px;
+	}
+label
+	{
+	text-align: center;
+	font-family:'Star Jedi';
+	color: darkblue;
+	font-size: 28px;
+	}
+textarea
+	{
+	resize: both;
+	width: 50%;
+	height: 100px;
+	}
+body
+	{
+	position: relative;
+	background-color: #FFFFFF;			
+	}
+body::before
+	{
+	content: '';
+	background-position: center;
+	position: absolute;
+	top: -80px;
+	left: 0;
+	width: 100%;
+	height: 112%;
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f0/Batuu_%2852934802408%29.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.2; 
+	z-index: -1;
+	}
+</style>
 	</head>
 	<body>
-		<h1>hotel star wars</h1>
-		<h2>El mejor hotel de la galaxia</h2>
-			<h3>Por favor, introduzca los siguientes datos para poder confirmar su reserva</h3>
-			<h2>datos personales</h2>
-		<form method="get">
-			<label>Nombre&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;&nbsp; <input name="nombre" required>
-			<br><br>
-			<label>Apellidos&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;&nbsp; 	<input name="apellido" required>
-			<br><br>
-			<label>Teléfono de contacto&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;&nbsp; <input name="telefono" required>
-			<br><br>
-			<label>E-mail&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;&nbsp; <input name="email" required>
-			<br><br>
-			<label>Número de noches&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;&nbsp; 	<input name="numnoches" required>
+		<h1><u>hotel star wars</u></h1>
+		<section>
+		     <table>
+			<tr>
+			<th><h2>datos personales&nbsp;&nbsp;&nbsp;&nbsp;</h2></th>
+			<th><h2>fecha de llegada&nbsp;&nbsp;&nbsp;&nbsp;</h2></th>
+			<th><h2>tipo de habitación&nbsp;&nbsp;&nbsp;&nbsp;</h2></th>
+			<th><h2>extras&nbsp;&nbsp;&nbsp;&nbsp;</h2></th>
+			</tr>
+		<tr>
+			<td style="text-align: left;">
+			<form method="get">
+			<label>Nombre y apellidos&nbsp;&nbsp;&nbsp;&nbsp;</label><br><input name="nombre" required>
 			<br>
-			<h2>fecha de llegada</h2>
-			<p>Por favor, indique el día de llegada:
-			<select name="Día de entrada">				
+			<label>Tfno.&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;&nbsp;<br><input name="telefono" required>
+			<br>
+			<label>E-mail&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;&nbsp;<br><input name="email" required>
+		</td>
+		<td style="text-align: center;">
+			<label>Nº de noches&nbsp;&nbsp;&nbsp;</label><br>
+			<select name="Numero de noches">				
+			    <option value="1">1</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="4">4</option>
+			    <option value="5">5</option>
+			    <option value="6">6</option>
+			    <option value="7">7</option>
+			    <option value="8">8</option>
+			    <option value="9">9</option>
+			    <option value="10">10</option>
+			    <option value="11">11</option>
+			    <option value="12">12</option>
+			    <option value="13">13</option>
+			    <option value="14">14</option>
+			    <option value="15">15</option>
+			    <option value="16">16</option>
+			    <option value="17">17</option>
+			    <option value="18">18</option>
+			    <option value="19">19</option>
+			    <option value="20">20</option>
+			    <option value="21">21</option>
+			    <option value="22">22</option>
+			    <option value="23">23</option>
+			    <option value="24">24</option>
+			    <option value="25">25</option>
+			    <option value="26">26</option>
+			    <option value="27">27</option>
+			    <option value="28">28</option>
+			    <option value="29">29</option>
+			    <option value="30">30</option>
+			    <option value="31">31</option>
+			</select>
+			<br>
+			<label>Día de llegada&nbsp;&nbsp;<br>
+			<select name="Día de entrada">		
 			    <option value="1">1</option>
 			    <option value="2">2</option>
 			    <option value="3">3</option>
@@ -56,8 +159,9 @@
 			    <option value="30">30</option>
 			    <option value="31">31</option>
 			</select>			
-			</p>			
-			<p>Por favor, indique el mes:			
+			</label>	
+			<br>		
+			<label>Mes de llegada&nbsp;&nbsp;<br>
 			<select name="Mes de entrada">
 			    <option value="Enero">Enero</option>
 			    <option value="Febrero">Febrero</option>
@@ -72,30 +176,34 @@
 			    <option value="Noviembre">Noviembre</option>
 			    <option value="Diciembre">Diciembre</option>
 			</select>						
-			</p>
-			<h2>tipo de habitación</h2>
-			<p>Por favor, indique el tipo de habitación que desea:
+			</label>
+		</td>
+		<td style="text-align: center;">
+			<label><input type="radio" name="habitacion" value="simple">Simple</label>
 			<br><br>
-			<input type="radio" name="habitacion" value="simple">Simple
-			<input type="radio" name="habitacion" value="doble">Doble
-			<input type="radio" name="habitacion" value="matrimonio">Matrimonio
-			</p>			
-			<h2>extras</h2>	
-			<p><strong>Por favor, indique si desea alguna de las siguientes opciones adicionales:</strong>
+			<label><input type="radio" name="habitacion" value="doble">Doble</label>
 			<br><br>
-        	        <input type="checkbox" name="extras"> Desayuno
-                	<input type="checkbox" name="extras">Comida
-                	<input type="checkbox" name="extras">Cena
-                	<input type="checkbox" name="extras">Cama supletoria
-                	</p>			
+			<label><input type="radio" name="habitacion" value="matrimonio">Matrimonio</label>
+			<br>
+		</td>
+		<td style="text-align: left;">	
+			<label><input type="checkbox" name="extras">Desayuno</label>
+			<br>
+                	<label><input type="checkbox" name="extras">Comida</label>
+			<br>
+               		<label><input type="checkbox" name="extras">Cena</label>
+			<br>
+			<label><input type="checkbox" name="extras">Cama supletoria</label>
+                	</p>
+		</td>
+	</tr>	
+    </table>		
 			<h2>comentarios adicionales
-			<br><br>
+			<br>
 			<textarea name="area"></textarea> 
 			</h2>
-			<p>		
-			<input type="submit" name="submit" onclick="alert('RESERVA REALIZADA - QUE LA FUERZA TE ACOMPAÑE');">&nbsp;&nbsp;
-			<input type="reset" name="Reset" onclick="alert('FORMULARIO LIMPIO');">
-			</p>
+			<label><input type="submit" name="submit" onclick="alert('RESERVA REALIZADA - QUE LA FUERZA TE ACOMPAÑE');">&nbsp;&nbsp;</label>
+			<label><input type="reset" name="Reset" onclick="alert('FORMULARIO LIMPIO');"></label>
 	</form>
 	</body>
 </html>
