@@ -175,10 +175,7 @@ body::before
 			<p>		
 			<input type="submit" name="submit" onclick="alert('RESERVA REALIZADA - QUE LA FUERZA TE ACOMPAÑE');">&nbsp;&nbsp;
 			<input type="reset" name="Reset" onclick="alert('FORMULARIO LIMPIO');">
-			</p>
-</form>
-	</body>
-</html>
-    </form>
+			</p>	
+		</form>
 	</body>
 </html>
