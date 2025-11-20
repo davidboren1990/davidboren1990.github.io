@@ -1,181 +1,148 @@
-#davidboren1990
 <!DOCTYPE html>
-<html lang="es">
+<HTML lang="es">
 	<head>
 		<meta charset="UTF-8">
-		<title>Hotel Star Wars</title>	
+		<title>David Borén Sanz</title>
 		<style>
-@font-face
-	{
-	font-family:'Star Jedi'
-	src: url("StarJedi-DGRW.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
-	}
-h1
-	{
-	text-align: center;
-	font-family: 'Star Jedi';
-	font-size: 36px;
-	}
-h2 
-	{
-	text-align: center;
-	font-family:'Star Jedi';
-	font-size: 30px;
-	text-decoration: underline;
-	}
-h3
-	{
-	text-align: center;
-	font-family:Garamond;
-	font-size: 23px;
-	}
-p
-	{
-	text-align: center;
-	font-family:Garamond;
-	font-size: 23px;
-	}
-form
-	{
-	text-align: center;
-	font-family:'Star Jedi';
-	font-size: 20px;
-	}
-option 
-	{
-	text-align: center;
-	font-family:'Star Jedi';
-	color: red;
-	}
-input
-	{
-	text-align: center;
-	font-family:'Star Jedi';
-	font-size: 18px;
-	color: darkblue;
-	}
-textarea
-	{
-	resize: both;
-	width: 50%;
-	height: 100px;
-	}
-body
-	{
-	position: relative;
-	background-color: #FFFFFF;			
-	}
-body::before
-	{
-	content: '';
-	background-position: center;
-	position: absolute;
-	top: -80px;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f0/Batuu_%2852934802408%29.jpg);
-	background-repeat: no-repeat;
-	height: 1500px;
-	background-size: cover;
-	opacity: 0.2; 
-	z-index: -1;
-	}
-</style>
+		
+		body
+			{
+			position: relative;
+			background-color: #FFFFFF;	
+			text-align: center;
+			color: black;
+			font-size: 24px;
+			font-family:Garamond;		
+			}
+		body::before
+			{
+			content: '';
+			background-position: center;
+			position: absolute;
+			top: -80px;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/60/Lac_du_Tech_%28Hautes-Pyr%C3%A9n%C3%A9es%29_2.jpg);
+			background-repeat: no-repeat;
+			height: 852px;
+			background-size: cover;
+			opacity: 0.2; 
+			z-index: -1;
+			}
+		h1
+			{
+			top: -30px;
+			text-align: center;
+			font-family:Garamond;
+			font-size: 44px;
+			text-decoration: underline;
+			}
+		h2
+			{
+			text-align: center;
+			font-family:Garamond;
+			font-size: 34px;
+			text-decoration: underline;
+			color: #0000EE;
+			}
+		td
+			{
+			margin-left: 40px;
+			list-style-position: inside;
+			font-size: 24px;
+			}
+		tr
+			{
+			text-align:right;
+			}
+		header
+			{
+			text-align: center;
+			font-family:Garamond;
+			text-decoration: underline;
+			font-size: 26px;
+			}
+		header img
+			{
+			width: 150px;
+			border-radius: 50%;
+			}
+		footer img
+			{
+			width: 50px;
+			border-radius: 50%;
+			}
+		footer {
+			text-align: center;
+			padding: 18px;
+			background-color: #eee;
+			margin-top: 30px;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>hotel star wars</h1>
-		<h2>El mejor hotel de la galaxia</h2>
-			<h3>Por favor, introduzca los siguientes datos para poder confirmar su reserva</h3>
-			<h2>datos personales</h2>
-		<form method="get">
-			<label>Nombre&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;&nbsp; <input name="nombre" required>
-			<br><br>
-			<label>Apellidos&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;&nbsp; 	<input name="apellido" required>
-			<br><br>
-			<label>Teléfono de contacto&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;&nbsp; <input name="telefono" required>
-			<br><br>
-			<label>E-mail&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;&nbsp; <input name="email" required>
-			<br><br>
-			<label>Número de noches&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;&nbsp; 	<input name="numnoches" required>
-			<br>
-			<h2>fecha de llegada</h2>
-			<p>Por favor, indique el día de llegada:
-			<select name="Día de entrada">				
-			    <option value="1">1</option>
-			    <option value="2">2</option>
-			    <option value="3">3</option>
-			    <option value="4">4</option>
-			    <option value="5">5</option>
-			    <option value="6">6</option>
-			    <option value="7">7</option>
-			    <option value="8">8</option>
-			    <option value="9">9</option>
-			    <option value="10">10</option>
-			    <option value="11">11</option>
-			    <option value="12">12</option>
-			    <option value="13">13</option>
-			    <option value="14">14</option>
-			    <option value="15">15</option>
-			    <option value="16">16</option>
-			    <option value="17">17</option>
-			    <option value="18">18</option>
-			    <option value="19">19</option>
-			    <option value="20">20</option>
-			    <option value="21">21</option>
-			    <option value="22">22</option>
-			    <option value="23">23</option>
-			    <option value="24">24</option>
-			    <option value="25">25</option>
-			    <option value="26">26</option>
-			    <option value="27">27</option>
-			    <option value="28">28</option>
-			    <option value="29">29</option>
-			    <option value="30">30</option>
-			    <option value="31">31</option>
-			</select>			
-			</p>			
-			<p>Por favor, indique el mes:			
-			<select name="Mes de entrada">
-			    <option value="Enero">Enero</option>
-			    <option value="Febrero">Febrero</option>
-			    <option value="Marzo">Marzo</option>
-			    <option value="Abril">Abril</option>
-			    <option value="Mayo">Mayo</option>
-			    <option value="Junio">Junio</option>
-			    <option value="Julio">Julio</option>
-			    <option value="Agosto">Agosto</option>
-			    <option value="Septiembre">Septiembre</option>
-			    <option value="Octubre">Octubre</option>
-			    <option value="Noviembre">Noviembre</option>
-			    <option value="Diciembre">Diciembre</option>
-			</select>						
-			</p>
-			<h2>tipo de habitación</h2>
-			<p>Por favor, indique el tipo de habitación que desea:
-			<br><br>
-			<input type="radio" name="habitacion" value="simple">Simple
-			<input type="radio" name="habitacion" value="doble">Doble
-			<input type="radio" name="habitacion" value="matrimonio">Matrimonio
-			</p>			
-			<h2>extras</h2>	
-			<p><strong>Por favor, indique si desea alguna de las siguientes opciones adicionales:</strong>
-			<br><br>
-        	        <input type="checkbox" name="extras"> Desayuno
-                	<input type="checkbox" name="extras">Comida
-                	<input type="checkbox" name="extras">Cena
-                	<input type="checkbox" name="extras">Cama supletoria
-                	</p>			
-			<h2>comentarios adicionales
-			<br><br>
-			<textarea name="area"></textarea> 
-			</h2>
-			<p>		
-			<input type="submit" name="submit" onclick="alert('RESERVA REALIZADA - QUE LA FUERZA TE ACOMPAÑE');">&nbsp;&nbsp;
-			<input type="reset" name="Reset" onclick="alert('FORMULARIO LIMPIO');">
-			</p>	
-		</form>
+		<header>
+			<h1>DAVID BOREN SANZ</h1>
+			<img src="https://media.licdn.com/dms/image/v2/C4D03AQF1VK5DYsONEQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1605629393907?e=1765411200&v=beta&t=Sanl3JzCCejPLPG8wlfyhUipV_aigGMw3Kruwh63O2I" alt="David Borén">
+		</header>
+
+		<main>
+		  <section>
+		     <table>
+			<tr>
+		          <th><h2>Datos personales</h2></th>
+			  <th><h2><a href="https://www.linkedin.com/in/dboren/details/education/" alt="Educación" target="_blank">Estudios</a></h2></th>
+                          <th><h2><a href="https://www.linkedin.com/in/dboren/details/experience/" alt="Experiencia laboral" target="_blank">Experiencia</a></h2></th>
+			  <th><h2>Aficiones</h2></th>
+			</tr>
+			<tr>
+			  <td style="text-align: left;">
+			   <ul>
+				<li>David Borén</li>
+				<li>12/12/1990</li>
+				<li>Natural de Binéfar (Huesca)</li>
+				<li>Barcelonés de acogida</li>
+				<li>Vianés de corazón</li>
+			  </ul>
+			</td>
+		
+			<td style="text-align: left;">
+			  <ul>
+				<li>Grado en Comercio Internacional - UPF</li>
+				<li>Grado en Marketing y Negocios - UPF</li>
+				<li>Postgrado en Aduanas - U. Isabel I</li>
+				<li>Grado en ADE - UOC</li>
+				<li>Proyecto de Desarrollador - FPDRioja</li>
+			  </ul>
+			</td>
+			
+			<td style="text-align: left;">
+			  <ul>
+				<li>Responsable de ventas (2015-)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Danish Crown</li>
+				<li>Responsable junior (2013-2015)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Danish Crown</li>
+				<li>Agente de seguros (2012-2013)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mapfre</li>
+			  </ul>
+			</td>
+			
+			<td style="text-align: left;">
+			  <ol>
+				<li>Adquirir conocimientos</li>
+				<li>Disfrutar de la naturaleza</li>
+				<li>Realizar ejercicio</li>
+				<li>Critica gastronómica</li>
+				<li>Leer novela policiaca</li>
+				<li>Invertir en bolsa</li>
+			  </ol>
+			</td>
+		    </table>
+		  </section>
+		</main>
+		
+		<footer>
+				<p> Para saber más, puede clicar en los encabezados "Estudios" y/o "Experiencia laboral"</p>
+				<a target="_blank" href="https://www.linkedin.com/in/dboren/"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"></a>
+				<a href="https://www.instagram.com/davidboren90/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/960px-Instagram_logo_2022.svg.png"></a>
+		</footer>
 	</body>
 </html>
