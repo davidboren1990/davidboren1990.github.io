@@ -138,7 +138,7 @@ Improved semantic structure, simplified and consolidated styles, mobile-friendly
 <body>
   <header>
     <h1>David Borén Sanz</h1>
-    <img src="https://media.licdn.com/dms/image/v2/C4D03AQF1VK5DYsONEQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1605629393907?e=1765411200&v=beta&t=Sanl3JzCCejPLPG8wlfyJMqRxhPOhEvHLOdtGBh4oOaI"
+    <img src="https://media.licdn.com/dms/image/v2/C4D03AQF1VK5DYsONEQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1605629393907?e=1765411200&v=beta&t=Sanl3JzCCejPLPG8wlfyhUipV_aigGMw3Kruwh63O2I"
       alt="Foto de David Borén Sanz">
   </header>
 
