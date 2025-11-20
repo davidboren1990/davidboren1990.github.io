@@ -22,7 +22,6 @@ Improved semantic structure, simplified and consolidated styles, mobile-friendly
     }
     header {
       text-align: center;
-      padding: 32px 16px 8px 16px;
     }
     header h1 {
       font-size: 2.3em;
