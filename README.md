@@ -1,7 +1,16 @@
 <!--
-A cleaner, modern HTML README that enhances accessibility, responsiveness, and visual hierarchy.
-Improved semantic structure, simplified and consolidated styles, mobile-friendly layout, and accessibility alt texts.
+README.md with HTML preview for David Borén Sanz.
+This file is for documentation and preview only. To use the code as a website, save it as index.html.
 -->
+
+## 👤 David Borén Sanz
+
+A concise online profile and portfolio.  
+Click on _Estudios_ or _Experiencia_ for more detail.
+
+---
+
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,16 +21,17 @@ Improved semantic structure, simplified and consolidated styles, mobile-friendly
     body {
       position: relative;
       min-height: 100vh;
-      background: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url('https://upload.wikimedia.org/wikipedia/commons/6/60/Lac_du_Tech_%28Hautes-Pyr%C3%A9n%C3%A9es%29_2.jpg') center/cover no-repeat;
+      background: linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.92)), 
+        url('https://upload.wikimedia.org/wikipedia/commons/6/60/Lac_du_Tech_%28Hautes-Pyr%C3%A9n%C3%A9es%29_2.jpg') center/cover no-repeat;
       color: #222;
-      font-family: 'Garamond', serif;
+      font-family: Garamond, serif;
       font-size: 20px;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
     }
     header {
       text-align: center;
+      padding: 32px 16px 8px 16px;
     }
     header h1 {
       font-size: 2.3em;
@@ -56,18 +66,17 @@ Improved semantic structure, simplified and consolidated styles, mobile-friendly
     .info-table th, .info-table td {
       vertical-align: top;
       padding: 18px 12px;
-      font-size: 1.1em;
+      font-size: 1.08em;
       text-align: left;
     }
     .info-table th {
       background: #f7f8fa;
       color: #08203e;
-      font-size: 1.3em;
+      font-size: 1.17em;
       border-bottom: 2px solid #d2e0e2;
       font-family: inherit;
       text-decoration: underline;
       letter-spacing: 1px;
-      line-height: 1.2;
     }
     .info-table a {
       color: #1a54e8;
@@ -85,9 +94,6 @@ Improved semantic structure, simplified and consolidated styles, mobile-friendly
       margin-bottom: 6px;
     }
     @media (max-width: 900px) {
-      .info-table {
-        font-size: 0.98em;
-      }
       .info-table th, .info-table td {
         padding: 12px 6px;
       }
@@ -106,7 +112,7 @@ Improved semantic structure, simplified and consolidated styles, mobile-friendly
       text-align: center;
       background: #eef6fa;
       padding: 24px 10px 16px 10px;
-      font-size: 1.1em;
+      font-size: 1.08em;
       margin-top: 40px;
       box-shadow: 0 -2px 14px rgba(40,60,90,0.03);
     }
@@ -136,7 +142,8 @@ Improved semantic structure, simplified and consolidated styles, mobile-friendly
 <body>
   <header>
     <h1>David Borén Sanz</h1>
-    <img src="https://media.licdn.com/dms/image/v2/C4D03AQF1VK5DYsONEQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1605629393907?e=1765411200&v=beta&t=Sanl3JzCCejPLPG8wlfyhUipV_aigGMw3Kruwh63O2I" alt="Foto de David Borén Sanz">
+    <img src="https://media.licdn.com/dms/image/v2/C4D03AQF1VK5DYsONEQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1605629393907?e=1765411200&v=beta&t=Sanl3JzCCejPLPG8wlfyJMqRxhPOhEvHLOdtGBh4oOaI"
+      alt="Foto de David Borén Sanz">
   </header>
 
   <main>
@@ -203,3 +210,4 @@ Improved semantic structure, simplified and consolidated styles, mobile-friendly
   </footer>
 </body>
 </html>
+```
