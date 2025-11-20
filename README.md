@@ -2,7 +2,6 @@
 A cleaner, modern HTML README that enhances accessibility, responsiveness, and visual hierarchy.
 Improved semantic structure, simplified and consolidated styles, mobile-friendly layout, and accessibility alt texts.
 -->
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
